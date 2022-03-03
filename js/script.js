@@ -16,7 +16,7 @@ var msnry = new Masonry(elem, {
   itemSelector: ".grid-item",
 });
 
-const trensingNowSlider = new Swiper(".trendingNow-slider", {
+const trendingNowSlider = new Swiper(".trendingNow-slider", {
   speed: 400,
   slidesPerView: 1,
   spaceBetween: 15,
@@ -38,6 +38,31 @@ const trensingNowSlider = new Swiper(".trendingNow-slider", {
     },
     1200: {
       slidesPerView: 3,
+    },
+  },
+});
+
+const videosNowSlider = new Swiper(".videos-slider", {
+  speed: 400,
+  slidesPerView: 1,
+  spaceBetween: 15,
+  loop: true,
+  navigation: {
+    nextEl: ".video-slider-navigation .next",
+    prevEl: ".video-slider-navigation .prev",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 1,
+    },
+    1024: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 2,
     },
   },
 });

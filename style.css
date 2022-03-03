@@ -101,6 +101,21 @@ body {
   color: var(--red);
   background-color: var(--white);
 }
+.homeSlider .homeSlider-prev {
+  left: -20px;
+}
+.homeSlider .homeSlider-next {
+  right: -20px;
+}
+
+@media screen and (min-width: 992px) {
+  .homeSlider .homeSlider-prev {
+    left: 0px;
+  }
+  .homeSlider .homeSlider-next {
+    right: 0px;
+  }
+}
 
 .homeSlider .homeSlider-prev::after,
 .homeSlider .homeSlider-next::after,
@@ -126,6 +141,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 300px;
+}
+.homeSlide > img {
+  height: 100%;
+  min-height: inherit;
+  object-fit: cover;
 }
 .homeSlide-text {
   position: absolute;

@@ -10,3 +10,8 @@ const swiper = new Swiper(".homeSlider", {
     clickable: true,
   },
 });
+
+var elem = document.querySelector(".grid");
+var msnry = new Masonry(elem, {
+  itemSelector: ".grid-item",
+});

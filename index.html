@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.min.css"
+      integrity="sha512-dlzxoRxU0/ZfgAUFn+8LwmuvNCrVZ3gnPedd8c3m5YwEq1bory6yFCt3uOzDTxnY4fTqVpM0Twxcn8scmBvuQg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-0">
+      <div class="container-fluid container-xxl">
+        <a class="navbar-brand" href="#">
+          <img src="./images/logo.svg" alt="logo" class="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-lg-around align-items-center"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0 align-items-center">
+            <li class="nav-item">
+              <a
+                class="nav-link px-xl-3 px-lg-3 active"
+                aria-current="page"
+                href="#"
+                >Business</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-xl-3 px-lg-3" href="#">Knowledge</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-xl-3 px-lg-3" href="#">Culture</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-xl-3 px-lg-3" href="#">Start Ups</a>
+            </li>
+          </ul>
+          <form class="d-flex mx-auto flex-grow-1 mx-xl-5 mx-lg-3">
+            <div class="input-group search-input">
+              <input
+                type="text"
+                class="form-control rounded py-2"
+                placeholder="Quick Search"
+              />
+              <div class="input-group-append search-input-icon">
+                <span class="input-group-text h-100">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+              </div>
+            </div>
+          </form>
+          <ul class="navbar-nav mb-2 mb-lg-0 align-items-center">
+            <li class="nav-item me-3">
+              <a class="nav-link btn btn-outline-red px-3" href="#"
+                >Launch Your Project</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-red px-3" href="#">Login/Signup</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar -->
+    <!-- homeslider -->
+    <section class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 px-0">
+          <div class="swiper homeSlider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide homeSlide">
+                <img src="./images/sliderImage.jpg" alt="" />
+                <p class="homeSlide-text h1 col-xl-6 col-8 text-center">
+                  Launchpad For Products Services That Have Something Unique and
+                  New
+                </p>
+              </div>
+              <div class="swiper-slide homeSlide">
+                <img src="./images/sliderImage.jpg" alt="" />
+                <p class="homeSlide-text h1 col-xl-6 col-8 text-center">
+                  Launchpad For Products Services That Have Something Unique and
+                  New
+                </p>
+              </div>
+              <div class="swiper-slide homeSlide">
+                <img src="./images/sliderImage.jpg" alt="" />
+                <p class="homeSlide-text h1 col-xl-6 col-8 text-center">
+                  Launchpad For Products Services That Have Something Unique and
+                  New
+                </p>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination homeSlider-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="container-xxl container-fluid homeSlider-nav-container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="homeSlider-navigation">
+                    <div class="swiper-button-prev homeSlider-prev">
+                      <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="swiper-button-next homeSlider-next">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- homeslider -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.min.js"
+      integrity="sha512-4w/aaXboO6KY1E/dqYwfq09sZnM+XDIcWvmHhfxvMQ+qwK84kxgWtNkAqbFNMLYd6EYA3nSgxTSyif/D3vlVMg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Literata:wght@400;500;600;700&display=swap");
+body {
+  font-family: "Literata", serif;
+}
+
+:root {
+  --red: #be0006;
+  --oldLavendar: #7d6b7d;
+  --charcoal: #3c4852;
+  --placeholderColor: #848a8f;
+  --auroMetalSaurus: #6c757d;
+  --Seashell: #f1f1f1;
+  --white: #ffffff;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+
+/* Navbar */
+.logo {
+  height: 60px;
+  width: 60px;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+.btn-red {
+  background-color: var(--red) !important;
+  color: var(--white) !important;
+}
+
+.btn-outline-red {
+  border: 1px solid var(--red);
+  background-color: var(--Seashell) !important;
+  color: var(--red) !important;
+}
+
+/********/
+.search-input {
+  position: relative;
+  background-color: var(--Seashell);
+}
+.search-input .form-control {
+  padding-right: 2rem;
+  background-color: transparent;
+  border: 1px solid var(--auroMetalSaurus);
+}
+.search-input .form-control:focus {
+  box-shadow: none;
+}
+.search-input-icon {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  z-index: 4;
+}
+.search-input-icon .input-group-text {
+  background-color: transparent;
+  border: 0;
+}
+
+/*HOME SLIDER*/
+.homeSlider .homeSlider-prev,
+.homeSlider .homeSlider-next {
+  height: 56px;
+  width: 56px;
+  border-radius: 5000px;
+  font-size: 1.3rem;
+  color: var(--red);
+  background-color: var(--white);
+}
+
+.homeSlider .homeSlider-prev::after,
+.homeSlider .homeSlider-next::after {
+  content: none;
+}
+.homeSlider-nav-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 0;
+  transform: translateY(-50%);
+  z-index: 20;
+}
+.homeSlider-navigation {
+  position: relative;
+}
+
+.homeSlide {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeSlide-text {
+  position: absolute;
+  z-index: 5;
+  color: var(--white);
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 0;
+  margin-right: 0;
+}
+.homeSlider-pagination .swiper-pagination-bullet {
+  height: 12px;
+  width: 12px;
+  background-color: var(--Seashell);
+}
